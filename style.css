@@ -42,7 +42,12 @@ width:380px
 
 .image{
 background-color: rgb(209, 148, 191);
-margin-left: 2%;
+margin: 0px;
+transition: all 0.25s;
+}
+
+.image:hover{
+transform: scale(1.1)
 }
 
 .caption{
@@ -74,4 +79,8 @@ display:flex;
 flex-flow: row wrap; 
 align-items: center;
 justify-content: space-between;
+}
+a, a:visited, a:link{
+    text-decoration: none;
+    text-decoration-style: none;
 }
