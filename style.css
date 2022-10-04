@@ -37,7 +37,9 @@ padding: 36px;
 margin: 80px 50px auto;
 background-color: rgb(209, 148, 191);
 height: 400px;
-width:380px
+width:380px;
+box-shadow: 1px solid;
+box-shadow: 7px 7px rgb(160, 115, 146)
 }
 
 .image{
