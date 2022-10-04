@@ -39,17 +39,24 @@ background-color: rgb(209, 148, 191);
 height: 400px;
 width:380px;
 box-shadow: 1px solid;
-box-shadow: 7px 7px rgb(160, 115, 146)
+box-shadow: 15px 15px 10px rgb(160, 115, 146)
 }
 
 .image{
 background-color: rgb(209, 148, 191);
 margin: 0px;
-transition: all 0.25s;
 }
 
-.image:hover{
+.image1:hover{
 transform: scale(1.1)
+}
+
+.image1:hover{opacity:1}
+
+.image1{
+    background-color: rgb(209, 148, 191);
+    transition: 0.25s;
+    opacity: 0.6; 
 }
 
 .caption{
