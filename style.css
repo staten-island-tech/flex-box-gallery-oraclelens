@@ -59,6 +59,36 @@ transform: scale(1.1)
     opacity: 0.6; 
 }
 
+.image2:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-30px);}
+    100% {transform: translateY(0);}
+}
+
+.image2{
+    background-color: rgb(209, 148, 191);
+    transition: 0.25s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.image3:hover{
+    transform: scale(0.9)
+    }
+    
+.image3:hover{opacity:1}
+    
+.image3{
+    background-color: rgb(209, 148, 191);
+    transition: 0.25s;
+    opacity: 0.6; 
+}
+
 .caption{
 font-size: 1.8rem;
 background-color:rgb(174, 122, 158);
@@ -92,4 +122,28 @@ justify-content: space-between;
 a, a:visited, a:link{
     text-decoration: none;
     text-decoration-style: none;
+}
+
+@media screen and (max-width:900px){
+    .row{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+    .row3{
+        flex-direction: column;
+    }
+    .box1{
+        width:
+    }
+}
+
+@media screen and (max-width:600px){
+    .row{
+        flex-direction: column;
+    }
+    .box1{
+        width:
+    }
 }
