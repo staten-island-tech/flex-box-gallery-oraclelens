@@ -37,9 +37,33 @@ padding: 36px;
 margin: 80px 50px auto;
 background-color: rgb(209, 148, 191);
 height: 400px;
-width:380px;
 box-shadow: 1px solid;
 box-shadow: 15px 15px 10px rgb(160, 115, 146)
+}
+
+.box2{
+    border-radius: 10px;
+    padding: 36px;
+    margin: 80px 50px auto;
+    background-color: rgb(209, 148, 191);
+    height: 400px;
+    box-shadow: 1px solid;
+    box-shadow: 15px 15px 10px rgb(160, 115, 146);
+    animation: gay infinite;
+}
+
+.box2{
+    animation-name: gay;
+    animation-duration: 6s;
+}
+
+@keyframes gay {
+16% {background-color: rgb(224, 107, 107);}
+33% {background-color: rgb(238, 179, 70);}
+50% {background-color: rgb(255, 252, 103);}
+66% {background-color: rgb(147, 255, 147);}
+83% {background-color: rgb(130, 130, 255);}
+100% {background-color: rgb(255, 142, 255);}
 }
 
 .image{
@@ -54,7 +78,6 @@ transform: scale(1.1)
 .image1:hover{opacity:1}
 
 .image1{
-    background-color: rgb(209, 148, 191);
     transition: 0.25s;
     opacity: 0.6; 
 }
@@ -62,16 +85,17 @@ transform: scale(1.1)
 .image2:hover{
     animation-name: bounce;
     animation-timing-function: ease;
+    animation: bounce 2s;
 }
 
 @keyframes bounce {
     0% {transform: translateY(0);}
     50% {transform: translateY(-30px);}
-    100% {transform: translateY(0);}
+    100% {transform: translateY(0px);}
+
 }
 
 .image2{
-    background-color: rgb(209, 148, 191);
     transition: 0.25s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -84,9 +108,17 @@ transform: scale(1.1)
 .image3:hover{opacity:1}
     
 .image3{
-    background-color: rgb(209, 148, 191);
     transition: 0.25s;
     opacity: 0.6; 
+}
+
+.image4:hover{
+    animation: rotate 2s;
+}
+
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(359deg);}
 }
 
 .caption{
