@@ -10,24 +10,27 @@ body,
 
 }
 .title{
-    display: flex; 
-    justify-content:space-around;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:space-evenly;
 }
 
 .heading{
 font-size: 4rem;
 border-radius: 15px;
-margin: 50px 350px auto;
 background-color: rgb(209, 148, 191);
 text-align: center;
 width:600px;
 color: white; 
+margin-left: auto;
+margin-right: auto; 
 }
 
 .row{
 display:flex;
+flex-wrap:wrap; 
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 }
 
 
@@ -152,7 +155,7 @@ a, a:visited, a:link{
     text-decoration-style: none;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1200px){
     .row{
         flex-direction: column;
     }
